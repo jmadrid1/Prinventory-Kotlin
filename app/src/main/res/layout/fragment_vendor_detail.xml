@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.VendorDetailFragment">
+
+    <ImageView
+        android:id="@+id/fragment_vendor_detail_imageview_icon"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/fragment_vendor_detail_imageview_email"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="230dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/fragment_vendor_detail_imageview_call"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/fragment_vendor_detail_name_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_vendor_detail_phone_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_vendor_detail_email_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_vendor_detail_street_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_vendor_detail_city_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_vendor_detail_state_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_vendor_detail_zipcode_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.TonerDetailFragment">
+
+    <ImageView
+        android:id="@+id/fragment_toner_detail_imageview_icon"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/fragment_toner_detail_make_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_toner_detail_model_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_toner_detail_tmodel_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_toner_detail_color_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_toner_detail_black_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_toner_detail_cyan_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_toner_detail_yellow_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_toner_detail_magenta_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="430dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+</RelativeLayout>

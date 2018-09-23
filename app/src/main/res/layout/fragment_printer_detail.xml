@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.PrinterDetailFragment">
+
+    <ImageView
+        android:id="@+id/fragment_printer_detail_imageview_icon"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/fragment_printer_detail_imageview_status"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/fragment_printer_detail_imageview_color"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/fragment_printer_detail_make_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_printer_detail_model_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_printer_detail_serial_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_printer_detail_owner_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_printer_detail_dept_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_printer_detail_location_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_printer_detail_floor_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment_printer_detail_ip_textview"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="440dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

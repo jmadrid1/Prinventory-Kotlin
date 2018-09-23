@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_color_values">
+        <item>B/W</item>
+        <item>Color</item>
+    </string-array>
+
+</resources>
