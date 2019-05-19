@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.VendorActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    tools:context="com.example.jovel.prinventory_kotlin.activities.VendorActivity">
 
     <FrameLayout
         android:id="@+id/content"
@@ -13,40 +15,66 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_vendor"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <ImageView
-            android:id="@+id/empty_img_printer"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="40dp"
-            android:src="@drawable/ic_list_empty" />
-
-        <TextView
-            android:id="@+id/empty_text_vendor"
-            android:layout_gravity="center"
-            android:text="@string/list_vendor_empty"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <android.support.design.widget.BottomNavigationView
-            android:id="@+id/navigation_vendor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="?android:attr/windowBackground"
-            app:menu="@menu/navigation" />
-
-        <FrameLayout
-            android:id="@+id/frag_activity_container"
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        </FrameLayout>
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_vendor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/empty_img_vendor"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_list_empty"
+                app:layout_constraintBottom_toTopOf="@+id/navigation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.431"/>
+
+            <TextView
+                android:id="@+id/empty_text_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_vendor_empty"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/empty_img_vendor" />
+
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="?android:attr/windowBackground"
+                app:layout_constraintBottom_toBottomOf="@+id/recycler_vendor"
+                app:menu="@menu/navigation"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </android.support.constraint.ConstraintLayout>
     </FrameLayout>
 
-</LinearLayout>
+    <FrameLayout
+        android:id="@+id/vendor_activity_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+</android.support.constraint.ConstraintLayout>
