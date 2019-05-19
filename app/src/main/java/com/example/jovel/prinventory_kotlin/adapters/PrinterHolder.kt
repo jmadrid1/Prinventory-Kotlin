@@ -29,7 +29,7 @@ class PrinterHolder(view: View) : RecyclerView.ViewHolder(view){
         mSettingIV = itemView.findViewById(R.id.row_printer_setting)
 
         mIconIV!!.setImageResource(R.drawable.ic_printer)
-        mMakeTV!!.text = "Make:    " + printer.make
+        mMakeTV!!.text = "Make:    " + printer.make + " " + printer.model
         mDeptTV!!.text = "Dept:    " + printer.department
         mIPTV!!.text = "IP:    " + printer.ip
 
