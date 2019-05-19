@@ -32,7 +32,6 @@ class PrinterDetailFragment : Fragment(){
         val colorIV = view.findViewById(R.id.fragment_printer_detail_imageview_color) as ImageView
 
         val makeTextView = view.findViewById(R.id.fragment_printer_detail_make_textview) as TextView
-        val modelTextView = view.findViewById(R.id.fragment_printer_detail_model_textview) as TextView
         val serialTextView = view.findViewById(R.id.fragment_printer_detail_serial_textview) as TextView
         val ownerTextView = view.findViewById(R.id.fragment_printer_detail_owner_textview) as TextView
         val deptTextView = view.findViewById(R.id.fragment_printer_detail_dept_textview) as TextView
@@ -68,7 +67,7 @@ class PrinterDetailFragment : Fragment(){
         }
 
         makeTextView.text = make
-        modelTextView.text = model
+        makeTextView.text = make + " " + model
         serialTextView.text = serial
         ownerTextView.text = owner
         deptTextView.text = dept
