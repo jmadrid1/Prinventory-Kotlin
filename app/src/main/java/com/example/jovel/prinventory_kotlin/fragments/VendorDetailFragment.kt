@@ -26,7 +26,6 @@ private const val ARG_ZIP = "zipcode"
 class VendorDetailFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
         val view: View = inflater.inflate(R.layout.fragment_vendor_detail, container,false)
 
         val mIconIV = view.findViewById(R.id.fragment_vendor_detail_imageview_icon) as ImageView

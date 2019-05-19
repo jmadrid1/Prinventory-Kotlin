@@ -21,7 +21,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/fragment_view_vendor_image"
+                android:id="@+id/fragment_vendor_detail_imageview_icon"
                 android:layout_width="121dp"
                 android:layout_height="124dp"
                 android:layout_gravity="center"
@@ -37,7 +37,7 @@
                 app:srcCompat="@drawable/ic_vendor" />
 
             <ImageView
-                android:id="@+id/fragment_view_vendor_call"
+                android:id="@+id/fragment_vendor_detail_imageview_call"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:layout_gravity="center"
@@ -53,7 +53,7 @@
                 app:srcCompat="@drawable/ic_phone" />
 
             <ImageView
-                android:id="@+id/fragment_view_vendor_message"
+                android:id="@+id/fragment_vendor_detail_imageview_email"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:layout_gravity="center"
@@ -69,7 +69,7 @@
                 app:srcCompat="@drawable/ic_message" />
 
             <TextView
-                android:id="@+id/fragment_view_vendor_name"
+                android:id="@+id/fragment_vendor_detail_name_textview"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -93,7 +93,7 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/fragment_view_vendor_phone"
+        android:id="@+id/fragment_vendor_detail_phone_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -110,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <TextView
-        android:id="@+id/fragment_view_vendor_email"
+        android:id="@+id/fragment_vendor_detail_email_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -128,7 +128,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <TextView
-        android:id="@+id/fragment_view_vendor_street"
+        android:id="@+id/fragment_vendor_detail_street_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -146,7 +146,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <TextView
-        android:id="@+id/fragment_view_vendor_city"
+        android:id="@+id/fragment_vendor_detail_city_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -163,7 +163,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <TextView
-        android:id="@+id/fragment_view_vendor_state"
+        android:id="@+id/fragment_vendor_detail_state_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -180,7 +180,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <TextView
-        android:id="@+id/fragment_view_vendor_zipcode"
+        android:id="@+id/fragment_vendor_detail_zipcode_textview"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
