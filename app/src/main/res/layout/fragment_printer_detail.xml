@@ -19,7 +19,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/fragment_detail_printer_image"
+                android:id="@+id/fragment_printer_detail_imageview_icon"
                 android:layout_width="128dp"
                 android:layout_height="124dp"
                 android:layout_marginTop="32dp"
@@ -29,8 +29,33 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_printer" />
 
+            <ImageView
+                android:id="@+id/fragment_printer_detail_imageview_status"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="44dp"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_printer_detail_make_textview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_status_active" />
+
+            <ImageView
+                android:id="@+id/fragment_printer_detail_imageview_color"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.533"
+                app:srcCompat="@drawable/ic_toner_row_color" />
+
             <TextView
-                android:id="@+id/fragment_detail_printer_make"
+                android:id="@+id/fragment_printer_detail_make_textview"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -42,105 +67,105 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fragment_detail_printer_image" />
+                app:layout_constraintTop_toBottomOf="@+id/fragment_printer_detail_imageview_icon" />
 
         </android.support.constraint.ConstraintLayout>
 
     </FrameLayout>
 
     <TextView
-        android:id="@+id/fragment_detail_printer_serial"
+        android:id="@+id/fragment_printer_detail_serial_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <TextView
-        android:id="@+id/fragment_detail_printer_status"
+        android:id="@+id/fragment_printer_detail_status_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <TextView
-        android:id="@+id/fragment_detail_printer_color"
+        android:id="@+id/fragment_printer_detail_color_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="120dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <TextView
-        android:id="@+id/fragment_detail_printer_owner"
+        android:id="@+id/fragment_printer_detail_owner_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="160dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <TextView
-        android:id="@+id/fragment_detail_printer_dept"
+        android:id="@+id/fragment_printer_detail_dept_textview"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="208dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <TextView
-        android:id="@+id/fragment_detail_printer_location"
+        android:id="@+id/fragment_printer_detail_location_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="252dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <TextView
-        android:id="@+id/fragment_detail_printer_floor"
+        android:id="@+id/fragment_printer_detail_floor_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="300dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <TextView
-        android:id="@+id/fragment_detail_printer_ip"
+        android:id="@+id/fragment_printer_detail_ip_textview"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="352dp"
+        android:layout_marginTop="344dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
