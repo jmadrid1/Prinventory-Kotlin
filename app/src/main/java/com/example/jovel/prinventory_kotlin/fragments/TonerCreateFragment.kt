@@ -36,11 +36,7 @@ class TonerCreateFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
         val view: View = inflater.inflate(R.layout.fragment_toner_create, container,false)
-
-//        val iconImageView = view.findViewById(R.id.fragment_toner_create_edittext_make}) as ImageView
-//        val colorIV = view.findViewById(R.id.fragment_toner_detail_imageview_color) as ImageView
 
         val mMakeET = view.findViewById(R.id.fragment_toner_create_edittext_make) as EditText
         val mModelET = view.findViewById(R.id.fragment_toner_create_edittext_model) as EditText
@@ -52,7 +48,7 @@ class TonerCreateFragment : Fragment() {
         val mYellowET = view.findViewById(R.id.fragment_toner_create_edittext_yellow) as EditText
         val mMagentaET = view.findViewById(R.id.fragment_toner_create_edittext_magenta) as EditText
 
-        val submitBtn = view.findViewById(R.id.fragment_toner_button_submit) as Button
+        val submitBtn = view.findViewById(R.id.fragment_toner_create_button_submit) as Button
 
         val colorAdapter: ArrayAdapter<CharSequence> = ArrayAdapter.createFromResource(mContext, R.array.spinner_color_values, R.layout.support_simple_spinner_dropdown_item)
         colorAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item)
@@ -68,20 +64,6 @@ class TonerCreateFragment : Fragment() {
             override fun onNothingSelected(parent: AdapterView<out Adapter>?) {
             }
         }
-
-//        iconImageView.setImageResource(R.drawable.ic_toner)
-//
-//        if (status == 0){
-//            statusIV.setImageResource(R.drawable.ic_status_inactive)
-//        }else{
-//            statusIV.setImageResource(R.drawable.ic_status_active)
-//        }
-//
-//        if(color == 0){
-//            colorIV.setImageResource(R.drawable.ic_black)
-//        }else{
-//            colorIV.setImageResource(R.drawable.ic_color)
-//        }
 
         mMakeET.addTextChangedListener(object: TextWatcher {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
