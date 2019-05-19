@@ -1,87 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_light_background">
-
+    android:backgroundTint="@color/createBackground"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background" >
 
     <EditText
         android:id="@+id/fragment_toner_create_edittext_make"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
-        android:layout_marginTop="150dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:hint="@string/hint_toner_make"/>
+        android:textColor="@color/whiteText"
+        android:textColorHighlight="@color/whiteText"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="508dp"
+        android:hint="@string/hint_toner_make"
+        android:inputType="textCapWords"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/fragment_toner_create_edittext_model"
         android:layout_width="180dp"
         android:layout_height="40dp"
-        android:layout_marginTop="190dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:hint="@string/hint_toner_model"/>
+        android:textColor="@color/whiteText"
+        android:textColorHighlight="@color/whiteText"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="452dp"
+        android:hint="@string/hint_toner_model"
+        android:inputType="textCapWords"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/fragment_toner_create_edittext_tmodel"
         android:layout_width="180dp"
         android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="220dp"
-        android:textSize="20sp"
-        android:hint="@string/hint_toner_model"/>
+        android:textColor="@color/whiteText"
+        android:textColorHighlight="@color/whiteText"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="400dp"
+        android:hint="@string/hint_toner_tmodel"
+        android:inputType="textCapWords"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/fragment_toner_create_spinner_color"
         android:layout_width="180dp"
         android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"/>
+        android:textColor="@color/whiteText"
+        android:textColorHighlight="@color/whiteText"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/fragment_toner_create_edittext_black"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
-        android:layout_marginTop="300dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:hint="@string/hint_toner_black"/>
+        android:textColor="@color/whiteText"
+        android:textColorHighlight="@color/whiteText"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="292dp"
+        android:hint="@string/hint_toner_black"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/fragment_toner_create_edittext_cyan"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
-        android:layout_marginTop="330dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:hint="@string/hint_toner_cyan"/>
+        android:textColor="@color/whiteText"
+        android:textColorHighlight="@color/whiteText"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="232dp"
+        android:hint="@string/hint_toner_cyan"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/fragment_toner_create_edittext_yellow"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
-        android:layout_marginTop="360dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:hint="@string/hint_toner_yellow"/>
+        android:textColor="@color/whiteText"
+        android:textColorHighlight="@color/whiteText"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="176dp"
+        android:hint="@string/hint_toner_yellow"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/fragment_toner_create_edittext_magenta"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
-        android:layout_marginTop="390dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:hint="@string/hint_toner_magenta"/>
+        android:textColor="@color/whiteText"
+        android:textColorHighlight="@color/whiteText"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="120dp"
+        android:hint="@string/hint_toner_magenta"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/fragment_toner_button_submit"
+        android:id="@+id/fragment_toner_create_button_submit"
         android:layout_width="90dp"
         android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
-        android:text="@string/btn_update"/>
+        android:background="@drawable/button_shape"
+        android:bottomRightRadius="2dp"
+        android:bottomLeftRadius="2dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
