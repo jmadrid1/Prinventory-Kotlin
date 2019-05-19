@@ -12,7 +12,6 @@ class PrinterHolder(view: View) : RecyclerView.ViewHolder(view){
 
     private var mIconIV: ImageView? = null
     private var mMakeTV: TextView? = null
-    private var mModelTV: TextView? = null
     private var mDeptTV: TextView? = null
     private var mIPTV: TextView? = null
     private var mStatusIV: ImageView? = null
@@ -23,7 +22,6 @@ class PrinterHolder(view: View) : RecyclerView.ViewHolder(view){
 
         mIconIV = itemView.findViewById(R.id.row_printer_icon)
         mMakeTV = itemView.findViewById(R.id.row_printer_make)
-        mModelTV = itemView.findViewById(R.id.row_printer_model)
         mDeptTV = itemView.findViewById(R.id.row_printer_dept)
         mIPTV = itemView.findViewById(R.id.row_printer_ip)
         mStatusIV = itemView.findViewById(R.id.row_printer_status)
@@ -32,7 +30,6 @@ class PrinterHolder(view: View) : RecyclerView.ViewHolder(view){
 
         mIconIV!!.setImageResource(R.drawable.ic_printer)
         mMakeTV!!.text = "Make:    " + printer.make
-        mModelTV!!.text = "Model:    " + printer.model
         mDeptTV!!.text = "Dept:    " + printer.department
         mIPTV!!.text = "IP:    " + printer.ip
 
