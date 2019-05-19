@@ -74,6 +74,6 @@
         android:id="@+id/toner_activity_frag"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"></FrameLayout>
+        android:visibility="visible"/>
 
 </android.support.constraint.ConstraintLayout>
