@@ -154,7 +154,7 @@ class VendorActivity : AppCompatActivity(), OnVendorItemClickListener {
         val frag: Fragment = VendorDetailFragment.newInstance(id, name, phone, email, street, city, state, zipcode)
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.vendor_activity_frag, frag)
                 .commit()
     }
 
@@ -192,7 +192,7 @@ class VendorActivity : AppCompatActivity(), OnVendorItemClickListener {
         val frag: Fragment = VendorUpdateFragment.newInstance(id, name, phone, email, street, city, state, zipcode)
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.vendor_activity_frag, frag)
                 .commit()
         return true
     }
