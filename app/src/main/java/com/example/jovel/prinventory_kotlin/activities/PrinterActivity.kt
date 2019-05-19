@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.PopupMenu
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.RecyclerView.LayoutManager
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -58,7 +59,7 @@ class PrinterActivity : AppCompatActivity(), OnPrinterItemClickListener {
         printerAdapter = PrinterAdapter(printerList,this)
 
         mRecyclerView?.adapter = printerAdapter
-        mRecyclerView?.layoutManager = LinearLayoutManager(this)
+//        mRecyclerView?.layoutManager = LayoutManager()
 
         setupAdapter()
         showListStatus()
@@ -160,7 +161,7 @@ class PrinterActivity : AppCompatActivity(), OnPrinterItemClickListener {
         val frag: Fragment = PrinterDetailFragment.newInstance(id, make, model, serial, status, color, owner, dept, location, floor, ip)
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.printer_activity_frag, frag)
                 .commit()
     }
 

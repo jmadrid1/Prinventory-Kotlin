@@ -94,7 +94,7 @@ class VendorActivity : AppCompatActivity(), OnVendorItemClickListener {
         val frag: Fragment = VendorCreateFragment()
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.vendor_activity_frag, frag)
                 .commit()
 
         return super.onOptionsItemSelected(item)

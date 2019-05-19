@@ -94,7 +94,7 @@ class TonerActivity : AppCompatActivity(), OnTonerItemClickListener {
         val frag: Fragment = TonerCreateFragment()
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.toner_activity_frag, frag)
                 .commit()
 
         return super.onOptionsItemSelected(item)
