@@ -40,10 +40,6 @@ class PrinterCreateFragment : Fragment() {
 
         val view: View = inflater.inflate(R.layout.fragment_printer_create, container,false)
 
-        val iconImageView = view.findViewById(R.id.fragment_printer_create_imageview_icon) as ImageView
-        val statusIV = view.findViewById(R.id.fragment_printer_create_imageview_status) as ImageView
-        val colorIV = view.findViewById(R.id.fragment_printer_create_imageview_color) as ImageView
-
         val makeET = view.findViewById(R.id.fragment_printer_create_edittext_make) as EditText
         val modelET = view.findViewById(R.id.fragment_printer_create_edittext_model) as EditText
         val serialET = view.findViewById(R.id.fragment_printer_create_edittext_serial) as EditText
@@ -66,12 +62,6 @@ class PrinterCreateFragment : Fragment() {
 
             override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
                 mPrinter!!.status = pos
-
-                if (pos == 0){
-                    statusIV.setImageResource(R.drawable.ic_status_inactive)
-                }else{
-                    statusIV.setImageResource(R.drawable.ic_status_active)
-                }
             }
 
             override fun onNothingSelected(parent: AdapterView<out Adapter>?) {
@@ -87,30 +77,10 @@ class PrinterCreateFragment : Fragment() {
 
             override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
                 mPrinter!!.color = pos
-
-                if(pos == 0){
-                    colorIV.setImageResource(R.drawable.ic_toner_row_bw)
-                }else{
-                    colorIV.setImageResource(R.drawable.ic_toner_row_color)
-                }
             }
 
             override fun onNothingSelected(parent: AdapterView<out Adapter>?) {
             }
-        }
-
-        iconImageView.setImageResource(R.drawable.ic_printer)
-
-        if (statusSpinner.selectedItem == 0){
-            statusIV.setImageResource(R.drawable.ic_status_inactive)
-        }else{
-            statusIV.setImageResource(R.drawable.ic_status_active)
-        }
-
-        if(colorSpinner.selectedItem == 0){
-            colorIV.setImageResource(R.drawable.ic_toner_row_bw)
-        }else{
-            colorIV.setImageResource(R.drawable.ic_toner_row_color)
         }
 
         makeET.addTextChangedListener(object: TextWatcher {
