@@ -22,13 +22,11 @@ private const val ARG_MAGENTA = "magenta"
 class TonerDetailFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
         val view: View = inflater.inflate(R.layout.fragment_toner_detail, container,false)
 
         val iconImageView = view.findViewById(R.id.fragment_toner_detail_imageview_icon) as ImageView
 
         val mMakeTV = view.findViewById(R.id.fragment_toner_detail_make_textview) as TextView
-        val mModelTV = view.findViewById(R.id.fragment_toner_detail_model_textview) as TextView
         val mTModelTV = view.findViewById(R.id.fragment_toner_detail_tmodel_textview) as TextView
         val mColorTV = view.findViewById(R.id.fragment_toner_detail_color_textview) as TextView
         val mBlackTV = view.findViewById(R.id.fragment_toner_detail_black_textview) as TextView
@@ -55,8 +53,7 @@ class TonerDetailFragment : Fragment() {
             iconImageView.setImageResource(R.drawable.ic_toner_row_color)
         }
 
-        mMakeTV.text = make
-        mModelTV.text = model
+        mMakeTV.text = make + " " + model
         mTModelTV.text = tModel
         mColorTV.text = color.toString()
         mBlackTV.text = black
