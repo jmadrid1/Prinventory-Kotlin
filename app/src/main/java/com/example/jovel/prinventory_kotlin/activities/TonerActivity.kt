@@ -130,7 +130,7 @@ class TonerActivity : AppCompatActivity(), OnTonerItemClickListener {
         val frag: Fragment = TonerDetailFragment.newInstance(id, make, model, tModel, color, black, cyan, yellow, magenta)
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.toner_activity_frag, frag)
                 .commit()
 
     }
@@ -193,7 +193,7 @@ class TonerActivity : AppCompatActivity(), OnTonerItemClickListener {
         val frag: Fragment = TonerUpdateFragment.newInstance(id, make, model, tModel, color, black, cyan, yellow, magenta)
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.toner_activity_frag, frag)
                 .commit()
         return true
     }
