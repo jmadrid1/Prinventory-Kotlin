@@ -12,20 +12,17 @@ class TonerHolder(view: View) : RecyclerView.ViewHolder(view){
 
     private var mIconIV: ImageView? = null
     private var mMakeTV: TextView? = null
-    private var mModelTV: TextView? = null
     private var mColorIV: ImageView? = null
     private var mSettingIV: ImageView? = null
 
     fun bindToner(toner: Toner, onTonerItemClickListener: OnTonerItemClickListener?){
         mIconIV = itemView.findViewById(R.id.row_printer_icon)
         mMakeTV = itemView.findViewById(R.id.row_toner_make)
-        mModelTV = itemView.findViewById(R.id.row_toner_model)
         mColorIV = itemView.findViewById(R.id.row_toner_color)
         mSettingIV = itemView.findViewById(R.id.row_toner_setting)
 
         mIconIV!!.setImageResource(R.drawable.ic_toner)
-        mMakeTV!!.text = "Make:    " + toner.make
-        mModelTV!!.text = "Model:    " + toner.model
+        mMakeTV!!.text = "Make:    " + toner.make + " " + toner.model
 
         val color: Int = toner.color
 
