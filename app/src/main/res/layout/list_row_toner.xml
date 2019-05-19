@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="89dp"
     android:paddingTop="7dp">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -18,55 +22,68 @@
                 android:id="@+id/row_toner_icon"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
-                android:layout_marginLeft="20dp"
-                app:srcCompat="@drawable/ic_toner"/>
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_toner" />
 
             <TextView
                 android:id="@+id/row_toner_make"
-                android:layout_width="120dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="107dp"
-                android:layout_marginTop="9dp"
-                android:text="@string/list_toner_design_make"/>
-
-            <TextView
-                android:id="@+id/row_toner_model"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="107dp"
-                android:layout_marginTop="28dp"
-                android:text="@string/list_toner_design_model"/>
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/list_toner_design_make"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/row_toner_icon"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/row_toner_tmodel"
-                android:layout_width="168dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="107dp"
-                android:layout_marginTop="47dp"
-                android:text="@string/list_toner_design_tmodel" />
-
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/list_toner_design_tmodel"
+                app:layout_constraintStart_toEndOf="@+id/row_toner_icon"
+                app:layout_constraintTop_toBottomOf="@+id/row_toner_make" />
 
             <ImageView
                 android:id="@+id/row_toner_color"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="270dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/row_toner_setting"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.578"
                 app:srcCompat="@drawable/ic_toner_row_color" />
-
 
             <ImageView
                 android:id="@+id/row_toner_setting"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.517"
                 app:srcCompat="@drawable/ic_settings" />
 
-        </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
