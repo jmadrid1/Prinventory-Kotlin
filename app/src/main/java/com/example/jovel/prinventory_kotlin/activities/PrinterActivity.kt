@@ -97,7 +97,7 @@ class PrinterActivity : AppCompatActivity(), OnPrinterItemClickListener {
         val frag: Fragment = PrinterCreateFragment()
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.printer_activity_frag, frag)
                 .commit()
 
         return super.onOptionsItemSelected(item)
@@ -203,7 +203,7 @@ class PrinterActivity : AppCompatActivity(), OnPrinterItemClickListener {
         val frag: Fragment = PrinterUpdateFragment.newInstance(id, make, model, serial, status, color, owner, dept, location, floor, ip)
 
         fm.beginTransaction()
-                .add(R.id.frag_activity_container, frag)
+                .add(R.id.printer_activity_frag, frag)
                 .commit()
         return true
     }

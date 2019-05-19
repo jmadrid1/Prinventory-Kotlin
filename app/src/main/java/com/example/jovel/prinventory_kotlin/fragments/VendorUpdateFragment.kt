@@ -45,10 +45,7 @@ class VendorUpdateFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
         val view: View = inflater.inflate(R.layout.fragment_vendor_update, container,false)
-
-//        val iconImageView = view.findViewById(R.id.fragment_vendor_update_edittext_make}) as ImageView
 
         val mNameET = view.findViewById(R.id.fragment_vendor_update_edittext_name) as EditText
         val mPhoneET = view.findViewById(R.id.fragment_vendor_update_edittext_phone) as EditText
