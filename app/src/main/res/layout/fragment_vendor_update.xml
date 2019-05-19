@@ -41,7 +41,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
-
     <EditText
         android:id="@+id/fragment_vendor_update_edittext_email"
         android:layout_width="180dp"
