@@ -35,7 +35,7 @@
         android:layout_marginBottom="316dp"
         android:hint="@string/hint_vendor_phone"
         android:textSize="14sp"
-        android:inputType="number"
+        android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/fragment_vendor_update_button_submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
